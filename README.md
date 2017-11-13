@@ -23,3 +23,4 @@
 * app/views/listings/new.html.erb
 * app/views/listings/show.html.erb
 * config/routes.rb
+* Gemfile
