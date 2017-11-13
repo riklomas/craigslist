@@ -1,24 +1,12 @@
-# README
+# What I did in the command line...
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`cd Sites`
+`rails new craigslist`
+`cd craigslist`
+`rails generate model Category title:string`
+`rails generate model Listing title:string description:text category:belongs_to`
+`rails generate controller categories`
+`rails generate controller listings`
+`bundle install` (after updating my Gemlist to include simple_form)
+`rails db:migrate` (once I checked for typos)
+`rails server`
