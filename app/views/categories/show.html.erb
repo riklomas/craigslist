@@ -1,0 +1,13 @@
+<h1><%= @category.title %></h1>
+
+<% @category.listings.each do |listing| %>
+  
+  <h2><%= link_to listing.title, category_listing_path(@category, listing) %></h2>
+  
+  <%= simple_format listing.description %>
+  
+<% end %>
+
+<p>
+  <%= link_to "Add new listing", new_category_listing_path(@category) %>
+</p>
